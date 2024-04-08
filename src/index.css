@@ -1,0 +1,47 @@
+.juego {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-family: Arial;
+}
+h1 {
+  text-align: center;
+}
+img {
+  transition: transform 0.1s; /* Mueve la propiedad de transición aquí */
+}
+td {
+  border: 1px solid rgb(213, 212, 212);
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 10px;
+  text-align: center;
+}
+img.tesoro {
+  filter: drop-shadow(0px 0px 3px #eaff00);
+}
+img.equis {
+  filter: drop-shadow(0px 0px 3px #ff0000);
+}
+img.craneo {
+  filter: drop-shadow(0px 0px 3px #868686);
+}
+td:hover {
+  background-color: lightblue;
+}
+td:hover{
+  img{
+    /*transform: scale(1.8);*/
+  }
+   /* Aplicar la escala al elemento img en el hover */
+}
+button {
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
